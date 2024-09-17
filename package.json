@@ -1,5 +1,5 @@
 {
-  "name": "jung-chat",
+  "name": "ai-app-starter",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "gh-deploy": "git subtree push --prefix dist origin gh-pages"
+    "gh-deploy": "git subtree split --prefix dist -b gh-pages-branch && git push origin gh-pages-branch:gh-pages --force && git branch -D gh-pages-branch"
   },
   "dependencies": {
     "@nlux/react": "^2",
