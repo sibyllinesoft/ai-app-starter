@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "gh-deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "@nlux/react": "^2",
